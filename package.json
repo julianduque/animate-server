@@ -4,7 +4,9 @@
   "description": "A realtime chat server using animated gif-like videos",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "npm run build-js",
+    "build-js": "browserify client/app.js -o public/app.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,10 @@
   },
   "homepage": "https://github.com/julianduque/animate-server",
   "dependencies": {
-    "st": "^0.5.3"
+    "st": "^0.5.3",
+    "webrtc2images": "^1.4.4"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.8"
   }
 }
