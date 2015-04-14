@@ -26,5 +26,5 @@ function onRequest (req, res) {
 }
 
 function onListening () {
-  console.log('Server running in port ' + port)
+  console.log(`Server running in port ${port}`)
 }
