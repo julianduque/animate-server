@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/julianduque/animate-server/issues"
   },
-  "homepage": "https://github.com/julianduque/animate-server"
+  "homepage": "https://github.com/julianduque/animate-server",
+  "dependencies": {
+    "st": "^0.5.3"
+  }
 }
