@@ -1,0 +1,19 @@
+{
+  "name": "animate-server",
+  "version": "1.0.0",
+  "description": "A realtime chat server using animated gif-like videos",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/julianduque/animate-server.git"
+  },
+  "author": "Julian Duque <julianduquej@gmail.com>",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/julianduque/animate-server/issues"
+  },
+  "homepage": "https://github.com/julianduque/animate-server"
+}
