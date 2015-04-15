@@ -1,12 +1,26 @@
+'use strict'
+
 const path = require('path')
 const course = require('course')
 const st = require('st')
+const jsonBody = require('body/json')
 
 const router = course()
 const mount = st({
   path: path.join(__dirname, '..', 'public'),
   index: 'index.html',
   passthrough: true
+})
+
+router.post('/process', function (req, res) {
+  jsonBody(req, res, { limit: 3 * 1024 * 1024 }, function (err, body) {
+    if (err) return fail(err, res)
+
+    console.log(body)
+
+    res.setHeader('Content-Type', 'application/json')
+    res.end(JSON.stringify({ ok: true }))
+  })
 })
 
 function onRequest (req, res) {
