@@ -20,6 +20,10 @@ router.post('/process', function (req, res) {
     if (Array.isArray(body.images)) {
       let converter = helper.convertVideo(body.images)
 
+      converter.on('log', function (msg) {
+        console.log(msg)
+      })
+
       converter.on('video', function (video) {
         res.setHeader('Content-Type', 'application/json')
         res.end(JSON.stringify({ video: video }))
