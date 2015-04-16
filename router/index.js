@@ -4,11 +4,12 @@ const path = require('path')
 const course = require('course')
 const st = require('st')
 const jsonBody = require('body/json')
+const animateClient = require('animate-client')
 const helper = require('../helper')
 
 const router = course()
 const mount = st({
-  path: path.join(__dirname, '..', 'public'),
+  path: animateClient,
   index: 'index.html',
   passthrough: true
 })
