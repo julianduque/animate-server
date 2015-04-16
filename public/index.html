@@ -3,12 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>:: Animate :: </title>
   </head>
   <body>
-    <div id="video-preview"></div>
-    <video id="video" width="200" height="200"></video>
-    <button id="record">Record</button>
-    <script src="/app.js"></script>
+    <section>
+      <ul id="messages"></ul>
+    </section>
+    <footer>
+      <div id="video-preview"></div>
+      <form>
+        <input type="text" name="message">
+      </form>
+    </footer>
+    <script src="/js/app.js"></script>
   </body>
 </html>
