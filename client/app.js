@@ -36,6 +36,10 @@ socket.on('messageack', function (message) {
   }
 })
 
+socket.on('messages', function (messages) {
+  messages.forEach(addMessage)
+})
+
 function record () {
   const input = document.querySelector('input[name="message"]')
   const message = input.value
