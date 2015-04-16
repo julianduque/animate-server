@@ -26,6 +26,8 @@
     "data-uri-to-buffer": "0.0.3",
     "domify": "^1.3.3",
     "handlebars": "^3.0.1",
+    "socket.io": "^1.3.5",
+    "socket.io-client": "^1.3.5",
     "st": "^0.5.3",
     "uuid": "^2.0.1",
     "webrtc2images": "^1.4.4",
