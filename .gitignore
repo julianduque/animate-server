@@ -2,3 +2,4 @@ node_modules
 public/app.js
 public/js/app.js
 *.log
+*.db
